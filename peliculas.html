@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas de Marvel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>
+            <a class="titulo" href="./index.html">Marvel</a>
+        </h1>
+        <input type="checkbox" class="btn" />
+        <ul class="options">
+            <li class="option"><a href="./index.html">Inicio</a></li>
+            <li class="option"><a href="./sobre.html">Sobre</a></li>
+            <li class="option"><a href="./peliculas.html">Tienda</a></li>
+            <li class="option"><a href="./calculadora.html">Calculadora</a></li>
+            <li class="option" ><a href="./reproductor.html">Reproductor</a></li>
+            <li class="option" ><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        <button type="button" id="abrir" ><img src="img/carrito.png"></button>
+    </nav>
+    <aside id="carrito">
+        <div class="cartitulo">
+            <h2>Carrito</h2>
+            <button type="button" id="open">X</button>
+        </div>
+        <div id="items">
+
+            <!-- <div class="item">
+                <img src="img/civilwar.jpg">
+                <div>
+                    <div class="itemTitulo">
+                        <h3>Civil war</h3>
+                        <button type="button" class="elimininarItem">x</button>
+                    </div>
+                    <div class="itemContent">
+                        <div class="cantidadItem">
+                            <button type="button" class="disminuir">-</button>
+                            <span>1</span>
+                            <button type="button" class="aumentar">+</button>
+                        </div>
+                        <span class="precioItem">$5,00</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="total" >
+            <h3>Total:</h3>
+            <p id="precioTotal"></p>
+            <button type="button" id="comprar">Comprar</button>
+        </div>
+    </aside>
+    <main>
+        <div id="categoria">
+            <div>
+                <button type="button" id="botonCategoria">Categoria <span> ; </span></button>
+                <ul id="listaCategoria" class="cerrado">
+                    <li><a href="./peliculas.html">Clasicas</a></li>
+                    <li><a href="./animadas.html">Animadas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="movie-container clasicos">
+            <article class="container">
+                <div class="title border">
+                    <h3>The amazing Spiderman</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 1999</li>
+                        <li>Director: Jhon Lenon</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/The Amazing Spider-Man (2012).png">
+                </div>
+                <div class="sinopsis">
+                    <p>Como la mayoría de los adolescentes de su edad, Peter está intentando descubrir quién es y cómo
+                        ha
+                        llegado a ser lo que es. En su viaje para atar los cabos de su pasado, descubre un secreto
+                        familiar
+                        que finalmente dará forma a su destino como Spiderman.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Iron Man: <br />El hombre de hierro</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2008</li>
+                        <li>Director: Jon Favreau</li>
+                        <li>Tipo de pelicula: Acción</li>
+                    </ul>
+                    <img class="portada" src="img/ironman.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Tony Stark es un inventor de armamento brillante que es secuestrado en el extranjero. Sus
+                        captores son unos terroristas que le obligan a construir una máquina destructiva </p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Thor</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2011</li>
+                        <li>Director: Kenneth Branagh</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/thor.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Tras desatar una antigua guerra, el codicioso guerrero Thor es desterrado a la Tierra por su
+                        padre para que viva entre los hombres y descubra así el verdadero sentido de la humildad. Allí,
+                        sin sus poderes, Thor deberá enfrentarse a las fuerzas más oscuras que su mayor enemigo le
+                        enviará desde Asgard.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Guardinanes de la galaxia</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2014</li>
+                        <li>Director: James Gunn</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/guardianes.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>El temerario aventurero Peter Quill, tras robar una misteriosa esfera codiciada por Ronan, un
+                        poderoso villano cuyas ambiciones amenazan a todo el universo, se convierte en la presa más
+                        codiciada por todos los cazarrecompensas de la galaxia.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Capitan America:<br />El primer vengador</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2011</li>
+                        <li>Director: Joe Johnston</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/capitan.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Tras tres meses de someterse a un programa de entrenamiento físico y táctico, Steve Rogers es
+                        encomendado su primera misión como Capitán América. Armado con un escudo indestructible.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Capitana Marvel</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2019</li>
+                        <li>Director: Anna Boden</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/capitana.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>La guerrera Vers no recuerda su pasado, el cual vuelve a ella en sueños. A pesar de sus problemas
+                        para controlar sus emociones y, con ellas, sus poderes, la Inteligencia Suprema le permite
+                        participar en una misión.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Ant-Man:<br />El hombre hormiga</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2015</li>
+                        <li>Director: Peyton Reed</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/antman.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>El doctor Hank Pym anuncia que abandona S.H.I.E.L.D. tras descubrir que han tratado de apropiarse
+                        de la tecnología de su Ant-Man, que Pym considera altamente peligrosa.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Doctor Strange:<br />Hechicero supremo</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2016</li>
+                        <li>Director: Scott Derrickson</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/doctor.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>La vida del famoso neurocirujano Dr. Stephen Strange cambia para siempre cuando un terrible
+                        accidente de coche le arrebata el uso de sus manos. Cuando la medicina tradicional le falla,
+                        busca la curación en un lugar misterioso llamado Kamar-Taj.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Pantera Negra</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2018</li>
+                        <li>Director: Ryan Coogler</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/pantera.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Hace millones de años, un meteorito de poderoso vibranium impactó en África. Cuando llegó la era
+                        del hombre, la mayoría de los habitantes de aquel territorio se unieron bajo el mando de un
+                        guerrero chamán que, gracias al vibranium, adquirió fuerza.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Vengadores</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2012</li>
+                        <li>Director: Joss Whedon</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/vengadores.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo de un desastre
+                        casi seguro cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial.
+                    </p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Capitan America Civil War</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2016</li>
+                        <li>Director: Hermanos Russo</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/civilwar.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Mientras intentan detener a Rumlow en Lagos, Capitán América, Falcon, Viuda Negra y Bruja
+                        Escarlata se ven obligados a realizar una intervención para evitar el robo de una muestra letal
+                        en el Instituto de Enfermedades Infecciosas.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3 class="nombrePelicula">El increible Hulk</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2008</li>
+                        <li>Director: Louis Leterrier</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/hulk.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Bruce Banner recorre el mundo en busca de un antídoto para librarse de su alter ego. Además
+                        tendrá que hacer frente a Emil, un nuevo enemigo, lo que convertirá a Nueva York en el escenario
+                        de la última batalla entre las dos criaturas más poderosas.</p>
+                </div>
+                <div class="precio">
+                    <span>$5,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Derechos Reservados &copy; 2021</p>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>

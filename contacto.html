@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="app.js"></script>
+</head>
+<body id="contenedor-general">
+    <nav class="navbar">
+        <h1>
+            <a class="titulo" href="./index.html">Marvel</a>
+        </h1>
+        <input type="checkbox" class="btn"/>
+        <ul class="options">
+            <li class="option" ><a href="./index.html">Inicio</a></li>
+            <li class="option" ><a href="./sobre.html">Sobre</a></li>
+            <li class="option" ><a href="./peliculas.html">Tienda</a></li>
+            <li class="option" ><a href="./calculadora.html">Calculadora</a></li>
+            <li class="option" ><a href="./reproductor.html">Reproductor</a></li>
+            <li class="option" ><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="contenedor-contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="date" name="fecha" id="fecha" required>
+            <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+            <input type="submit" name="boton" id="enviar" class="border" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p>Derechos Reservados &copy; 2021</p>
+    </footer>
+    <script src="./js/contacto.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin:0;
+    
+}
+main{
+    font-family:'Rubik', sans-serif;
+    /* height: 100vh; */
+}
+/* Menu */
+.navbar{
+    width: 100%;
+    background-color:#242424;
+    display: flex;
+    font-family: sans-serif;
+    /* position: fixed; */
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    flex-basis: 30%;
+}
+
+.options{
+    flex-basis: 40%;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+
+.option{
+    font-size: 1.1rem;
+    padding: 1em;
+}
+.option>a{
+    text-decoration: none;
+    color:#f0f0f0;
+}
+.titulo{
+    text-decoration:none;
+    background-color: rgb(185, 41, 41);
+    padding: 0.2em 0.5em;
+    color:#f0f0f0;
+    border:.1em solid;
+    box-shadow: -.15em .15em 0 0 #f0f0f0;
+    transition: all .3s;
+}
+h1{
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    margin:.6em;
+}
+.btn{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
+.btn::before{
+    content: "p";
+    position: absolute;
+    top:0;
+    left: 0;
+    font-family: "WebSymbolsRegular";
+    font-weight: 700;
+    font-size: 2em;
+    z-index: 99;
+    color:white;
+}
+
+@media (max-width:900px){
+    .btn{
+        display: flex;
+        z-index: 100;
+    }
+    .options{
+        width: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        background:#242424;
+        transform: translateY(-110%);
+        transition: all .4s;
+        z-index: 98;
+    }
+    input:checked~.options{
+        transform: translateY(0%);
+    }
+    input:checked::before{
+        content: "'" ;
+        color: white;
+    }
+    .options{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .option a{
+        font-size: 1.5em;
+    }
+}
+
+.titulo:hover{
+    box-shadow: -.2em .2em 0 0 #f0f0f0;
+}
+.option>a:hover{
+    color:purple;
+}
+.border{
+    text-decoration:none;
+    width:fit-content;
+    background-color: #f1d624;
+    padding: 0.2em 0.5em;
+    color:#242424;
+    border:.12em solid #242424;
+    box-shadow: -.5em .5em 0 0 #242424;
+    transition: all .2s;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.descrip{
+    width: 30%;
+}
+.content-description{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-img img{
+    width: 45%;
+}
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    min-width: 40em;
+    background-color: #ee6268;
+    border-radius: 50%;
+}
+footer{
+    background-color: #242424;
+    color:white;
+    padding:1em;
+    text-align: center;
+}
+.personaje{
+    width: 15rem;
+    height: 14rem;
+    box-shadow: .2em .2em .7em #242424;
+    margin: 2em;
+}
+.personaje img{
+    width: 100%;
+}
+.personaje h3{
+    text-align: center;
+    padding: 0.3em;
+}
+.personaje p{
+    text-align: center;
+    color:#414141;
+    font-weight: bold;
+}
+.personajes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#importantes{
+    height: auto;
+    padding: 3em;
+}
+
+#importantes h2{
+    margin: 2em auto;
+    background-color: #ee6268;
+    box-shadow: -.2em .2em 0 0 #242424;
+    
+}
+
+@media (max-width:1449px) {
+    .descrip{
+        width: 80%;
+        margin: 2em;
+    }
+    .contenedor-img{
+        min-width: 80%;
+    }
+    .content-description{
+        height: auto;
+        padding: 1em;
+    }
+}
+aside{
+    position: fixed;
+    right: 0;
+    top: 45%;
+}
+.icono{
+    display: block;
+    padding: 0.5em;
+    margin: 1em;
+    background-color: #242424;
+    border-radius: 48%;
+    font-style: none;
+    font-family: "WebSymbolsRegular";
+    font-size: 2em;
+    transition: all .5s ease;
+}
+.f{
+    color:#aac5da;
+
+}
+.y{
+    color:rgb(185, 41, 41);
+}
+.f:hover{
+    color:#7291a8;
+    
+}
+.y:hover{
+    color:rgb(126, 29, 29);
+}
+.f:hover,.y:hover{
+    transform: scale(1.2,1.2);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas de Marvel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.png">
+</head>
+
+<body >
+    <nav class="navbar">
+        <h1>
+            <a class="titulo" href="./index.html">Marvel</a>
+        </h1>
+        <input type="checkbox" class="btn" />
+        <ul class="options">
+            <li class="option"><a href="./index.html">Inicio</a></li>
+            <li class="option"><a href="./sobre.html">Sobre</a></li>
+            <li class="option"><a href="./peliculas.html">Tienda</a></li>
+            <li class="option"><a href="./calculadora.html">Calculadora</a></li>
+            <li class="option"><a href="./reproductor.html">Reproductor</a></li>
+            <li class="option"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        <button type="button" id="abrir"><img src="img/carrito.png"></button>
+    </nav>
+    <aside id="carrito">
+        <div class="cartitulo">
+            <h2>Carrito</h2>
+            <button type="button" id="open">X</button>
+        </div>
+        <div id="items">
+
+            <!-- <div class="item">
+                <img src="img/civilwar.jpg">
+                <div>
+                    <div class="itemTitulo">
+                        <h3>Civil war</h3>
+                        <button type="button" class="elimininarItem">x</button>
+                    </div>
+                    <div class="itemContent">
+                        <div class="cantidadItem">
+                            <button type="button" class="disminuir">-</button>
+                            <span>1</span>
+                            <button type="button" class="aumentar">+</button>
+                        </div>
+                        <span class="precioItem">$5,00</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="total">
+            <h3>Total:</h3>
+            <p id="precioTotal"></p>
+            <button type="button" id="comprar">Comprar</button>
+        </div>
+    </aside>
+    <main >
+        <div id="categoria">
+            <div>
+                <button type="button" id="botonCategoria">Categoria <span> ; </span></button>
+                <ul id="listaCategoria" class="cerrado">
+                    <li><a href="./peliculas.html">Clasicas</a></li>
+                    <li><a href="./animadas.html">Animadas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="movie-container clasicos">
+            <article class="container">
+                <div class="title border">
+                    <h3>Spiderman Into the Spiderverse</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2015</li>
+                        <li>Director: Peter Ransey</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/SpidermanNuevoUniverso.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Luego de ser mordido por una araña radioactiva, el joven Miles Morales desarrolla misteriosos
+                        poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el
+                        malvado Kingpin.</p>
+                </div>
+                <div class="precio">
+                    <span>$9,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>What if?...</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2021</li>
+                        <li>Director: A.C. Bradley</li>
+                        <li>Tipo de pelicula: Acción</li>
+                    </ul>
+                    <img class="portada" src="img/whatif.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>El espacio explora lo que sucedería si los principales momentos de las películas del Universo
+                        Cinematográfico de Marvel ocurrieran de manera diferente.</p>
+                </div>
+                <div class="precio">
+                    <span>$29,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Big Hero 6</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 2017</li>
+                        <li>Director: Don Hall</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/bighero.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>Cuando un giro inesperado de eventos los sumerge en el medio de un peligroso plan, un niño
+                        prodigio, su robot y sus amigos se convierten en héroes de alta tecnología en una misión para
+                        salvar su ciudad.</p>
+                </div>
+                <div class="precio">
+                    <span>$7,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="container">
+                <div class="title border">
+                    <h3>Dracula</h3>
+                </div>
+                <div class="info">
+                    <ul class="desc">
+                        <li>Año: 1980</li>
+                        <li>Director: Minoru Okazaki</li>
+                        <li>Tipo de pelicula: Accion</li>
+                    </ul>
+                    <img class="portada" src="img/dracula.jpg">
+                </div>
+                <div class="sinopsis">
+                    <p>La rareza desconocida (y exquisita) de la lista. Esta adaptación anime de la mítica serie de los
+                        años 70 The Tomb of Dracula es una extraña coproducción de Toei Animation y Marvel estrenada en
+                        Japón en 1980</p>
+                </div>
+                <div class="precio">
+                    <span>$8,00</span>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                </div>
+            </article>
+            
+        </div>
+    </main>
+    <footer>
+        <p>Derechos Reservados &copy; 2021</p>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
